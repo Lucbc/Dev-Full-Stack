@@ -1,0 +1,30 @@
+package projeto1;
+
+public class PessoaJuridica extends Pessoa{
+	
+	protected int cnpj;
+	protected String atividade;
+	
+	public PessoaJuridica(int id, String nome, String endereco, int cnpj, String atividade) {
+		super(id, nome, endereco);
+		this.cnpj = cnpj;
+		this.atividade = atividade;
+	}
+
+	public int getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(int cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getAtividade() {
+		return atividade;
+	}
+
+	public void setAtividade(String atividade) {
+		this.atividade = atividade;
+	}
+	
+}

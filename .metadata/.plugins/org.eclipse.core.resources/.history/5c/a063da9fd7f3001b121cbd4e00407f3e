@@ -1,0 +1,8 @@
+package projeto1;
+
+public class Conta {
+	Cliente Pessoa;
+	int nrConta;
+	double saldo;
+
+}

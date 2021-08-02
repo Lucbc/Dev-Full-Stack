@@ -1,0 +1,52 @@
+package projeto1;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int opt;
+		
+			//INSTANCIA A CLASSE
+			ContaEspecial conta1 = new ContaEspecial(new Pessoa(787878, "Sérgio Ramos", "Setor Bueno. Av. 85"),1,1000,90000);
+			ContaEspecial conta2 = new ContaEspecial(new Pessoa(454545, "Mario Lago", "Setor Central. Rua 55"),2,10000,50000);
+			ContaEspecial conta3 = new ContaEspecial(new Pessoa(121212, "Cristina Mendes", "Setor Panorama Park. Rua Vitória Régia"),3,25500,70000);			
+
+			do {
+			System.out.println("Qual operação deseja realizar?\n1-Sacar\n2-Depositar\n3-Transferir\n4-Consultar Saldo\n0-Encerrar Operação");
+			 opt = Integer.parseInt(sc.nextLine());
+			
+			if(opt == 1){
+			//DEFINE VALOR PARA SACAR
+			conta1.sacar(55.0);
+			conta2.sacar(55.0);
+			conta3.sacar(55.0);
+			}
+			
+			else if(opt == 2) {
+			//DEFINE VALOR PARA DEPOSITAR
+			conta1.depositar(555.0);
+			conta2.depositar(1055.0);
+			conta3.depositar(3055.0);
+			}
+			
+			else if(opt == 3) {
+			//DEFINE VALOR PARA TRANSFERIR
+			conta1.transferir(conta2,5550.0);
+			conta2.transferir(conta3,10550.0);
+			conta3.transferir(conta1,30550.0);
+			}
+			
+			else if(opt == 4) {
+			//RESGATA SALDO
+			conta1.verificaSaldo();
+			conta2.verificaSaldo();
+			conta3.verificaSaldo();
+			}
+			}while(opt != 0);
+
+		}
+
+	}

@@ -1,0 +1,48 @@
+package projeto1;
+
+public class Conta {
+
+	Cliente Pessoa;
+	int nrConta;
+	double saldo;
+	
+	public Cliente getPessoa() {
+		return Pessoa;
+	}
+	public void setPessoa(Cliente pessoa) {
+		Pessoa = pessoa;
+	}
+	public int getNrConta() {
+		return nrConta;
+	}
+	public void setNrConta(int nrConta) {
+		this.nrConta = nrConta;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public void sacar(Double valor){
+		saldo -= valor;
+	}
+	
+	public void debitar(Double valor){
+		saldo += valor;
+	}
+	
+	public void depositar(Double valor){
+		saldo += valor;
+	}
+	
+	public void transferir(Double valor){
+		saldo -= valor;
+	}
+
+	public void verificaSaldo(){
+		System.out.println("Valor do Saldo: "+ getSaldo());
+	}
+	
+}

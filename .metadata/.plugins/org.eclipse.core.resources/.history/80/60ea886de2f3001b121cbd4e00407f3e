@@ -1,0 +1,21 @@
+package projeto1;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+			//INSTANCIA A CLASSE
+			Conta conta = new Conta();
+
+			//DEFINE UM VALOR DE SALDO
+			conta.setSaldo(633.00);
+
+			//DEFINE VALOR PARA DEPOSITAR
+			conta.depositar(555.0);
+
+			//RESGATA VALOR
+			conta.verificaSaldo();
+
+		}
+
+	}

@@ -1,0 +1,9 @@
+package projeto1;
+
+public class PessoaFisica {
+	
+	int cpf;
+	Calendar dtNascimento;
+	String genero;
+
+}

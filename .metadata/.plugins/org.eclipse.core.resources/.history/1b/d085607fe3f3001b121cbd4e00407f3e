@@ -1,0 +1,34 @@
+package projeto1;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+			//INSTANCIA A CLASSE
+			ContaEspecial conta1 = new ContaEspecial(new Pessoa(787878, "Sérgio Ramos", "Setor Bueno. Av. 85"),1,1000,90000);
+			ContaEspecial conta2 = new ContaEspecial(new Pessoa(454545, "Mario Lago", "Setor Central. Rua 55"),2,10000,50000);
+			ContaEspecial conta3 = new ContaEspecial(new Pessoa(121212, "Cristina Mendes", "Setor Panorama Park. Rua Vitória Régia"),3,25500,70000);			
+
+			//DEFINE VALOR PARA SACAR
+			conta1.depositar(55.0);
+			conta2.depositar(55.0);
+			conta3.depositar(55.0);
+			
+			//DEFINE VALOR PARA DEPOSITAR
+			conta1.depositar(555.0);
+			conta2.depositar(1055.0);
+			conta3.depositar(3055.0);
+
+			//DEFINE VALOR PARA TRANSFERIR
+			conta1.depositar(5550.0);
+			conta2.depositar(10550.0);
+			conta3.depositar(30550.0);
+			
+			//RESGATA SALDO
+			conta1.verificaSaldo();
+			conta2.verificaSaldo();
+			conta3.verificaSaldo();
+
+		}
+
+	}

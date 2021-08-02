@@ -1,0 +1,18 @@
+package projeto1;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+			//INSTANCIA A CLASSE
+			Conta conta = new Conta(new Pessoa(787878, "Sérgio Ramos", "Setor Bueno. Av. 85"),1,1000);
+
+			//DEFINE VALOR PARA DEPOSITAR
+			conta.depositar(555.0);
+
+			//RESGATA VALOR
+			conta.verificaSaldo();
+
+		}
+
+	}

@@ -1,0 +1,15 @@
+package projeto1;
+
+public class ContaEspecial {
+	
+	double limite;
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+}
